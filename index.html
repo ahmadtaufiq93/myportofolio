@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Saya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portofolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<header class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <img src="img/profile.jpg" alt="Foto Ahmad Taufiq" class="rounded-circle mb-3 foto-profil">
+    <h1>Halo, I'am Ahmad Taufiq</h1>
+    <p class="lead">Web Developer | UI/UX Designer | Freelancer</p>
+     <!-- Tombol WhatsApp -->
+    <a href="https://wa.me/6281221861551" target="_blank" class="btn btn-success mt-3">
+      <i class="bi bi-whatsapp"></i> Hubungi Saya
+    </a>
+  </div>
+</header>
+
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Tentang Saya</h2>
+      <p class="text-center">
+      Saya Ahmad Taufiq, seorang pemula yang antusias di bidang teknologi komputer, khususnya pemrograman dan desain UI/UX. Selama satu tahun terakhir, saya aktif mengembangkan berbagai proyek berbasis web menggunakan HTML, CSS, JavaScript, dan Bootstrap. Saya juga memiliki keterampilan dasar dalam menggunakan Figma dan Photoshop untuk mendesain antarmuka yang menarik dan responsif. Saya senang belajar hal baru, menyelesaikan tantangan teknis, serta menciptakan solusi kreatif yang bermanfaat. Tujuan saya adalah menjadi developer yang tidak hanya paham teknis, tapi juga peduli pada pengalaman pengguna.
+      </p>
+      <p></p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center">Proyek Saya</h2>
+    <div class="row" id="project-list">
+      <!-- Proyek dinamis akan ditampilkan di sini -->
+    </div>
+  </div>
+</section>
+
+
+ <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Hubungi Saya</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <form id="contactForm" action="https://formspree.io/f/myzjqokp" method="POST">
+
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Anda</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="pesan" class="form-label">Pesan</label>
+            <textarea class="form-control" id="pesan" name="pesan" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+        <div id="formAlert" class="alert alert-success mt-3 d-none" role="alert">
+          Pesan berhasil dikirim!
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="bg-light p-3 rounded shadow-sm h-100 d-flex ">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-2">&copy; 2025 Ahmad Taufiq. | Jl. Perjuangan No. 99D - Cirebon, Jawa Barat.</p>
+    <div class="social-icons">
+      <a href="#" target="_blank" class="text-white me-3">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="#" target="_blank" class="text-white me-3">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="#" target="_blank" class="text-white me-3">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="#" target="_blank" class="text-white me-3">
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
