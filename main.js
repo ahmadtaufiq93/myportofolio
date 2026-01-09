@@ -39,8 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // ================= PROJECT LIST =================
 document.addEventListener("DOMContentLoaded", function () {
 
-  // 🔹 BASE PATH IMAGE (FIX DI SINI)
-  const IMG_PATH = "/img/logo.jpg";
+  const IMG_PATH = "img/logo.jpg"; // ✅ path fix
 
   const projects = [
     {
@@ -76,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const container = document.getElementById("project-list");
-
   if (!container) return;
 
   projects.forEach((project) => {
