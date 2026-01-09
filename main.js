@@ -42,32 +42,32 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "Website Toko Online",
       desc: "Sistem e-commerce dengan fitur keranjang dan checkout.",
-     image: "img/logo.jpg",
+     image: "/img/logo.jpg",
     },
     {
       title: "Aplikasi To-Do List",
       desc: "Aplikasi manajemen tugas sederhana dan efisien.",
-     image: "img/logo.jpg",
+     image: "/img/logo.jpg",
     },
     {
       title: "Landing Page Produk",
       desc: "Desain landing page untuk promosi produk digital.",
-      image: "img/logo.jpg",
+      image: "/img/logo.jpg",
     },
     {
       title: "Dashboard Admin",
       desc: "Dashboard interaktif untuk mengelola data pengguna.",
-    image: "img/logo.jpg",
+    image: "/img/logo.jpg",
     },
     {
       title: "Portofolio Pribadi",
       desc: "Website pribadi untuk menampilkan pengalaman dan karya.",
-      image: "img/logo.jpg",
+      image: "/img/logo.jpg",
     },
     {
       title: "Aplikasi Cuaca",
       desc: "Aplikasi yang menampilkan prakiraan cuaca dengan API.",
-      image: "img/logo.jpg",
+      image: "/img/logo.jpg",
     }
 l
   const container = document.getElementById("project-list");
