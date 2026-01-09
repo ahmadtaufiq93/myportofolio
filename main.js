@@ -1,4 +1,4 @@
-// Handle contact form submission
+// ================= CONTACT FORM =================
 document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.getElementById("contactForm");
   const alertBox = document.getElementById("formAlert");
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if (response.ok) {
             alertBox.classList.remove("d-none");
             contactForm.reset();
+
             setTimeout(() => {
               alertBox.classList.add("d-none");
             }, 4000);
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Terjadi kesalahan. Silakan coba lagi.");
           }
         })
-        .catch((error) => {
+        .catch(() => {
           alert("Koneksi gagal. Silakan periksa koneksi Anda.");
         });
     });
@@ -35,46 +36,53 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-/*.........*/
+// ================= PROJECT LIST =================
 document.addEventListener("DOMContentLoaded", function () {
+
+  // 🔹 BASE PATH IMAGE (FIX DI SINI)
+  const IMG_PATH = "/img/logo.jpg";
+
   const projects = [
     {
       title: "Website Toko Online",
       desc: "Sistem e-commerce dengan fitur keranjang dan checkout.",
-     image: "/img/logo.jpg",
+      image: IMG_PATH,
     },
     {
       title: "Aplikasi To-Do List",
       desc: "Aplikasi manajemen tugas sederhana dan efisien.",
-     image: "/img/logo.jpg",
+      image: IMG_PATH,
     },
     {
       title: "Landing Page Produk",
       desc: "Desain landing page untuk promosi produk digital.",
-      image: "/img/logo.jpg",
+      image: IMG_PATH,
     },
     {
       title: "Dashboard Admin",
       desc: "Dashboard interaktif untuk mengelola data pengguna.",
-    image: "/img/logo.jpg",
+      image: IMG_PATH,
     },
     {
       title: "Portofolio Pribadi",
       desc: "Website pribadi untuk menampilkan pengalaman dan karya.",
-      image: "/img/logo.jpg",
+      image: IMG_PATH,
     },
     {
       title: "Aplikasi Cuaca",
       desc: "Aplikasi yang menampilkan prakiraan cuaca dengan API.",
-      image: "/img/logo.jpg",
-    }
-l
+      image: IMG_PATH,
+    },
+  ];
+
   const container = document.getElementById("project-list");
+
+  if (!container) return;
 
   projects.forEach((project) => {
     const col = document.createElement("div");
     col.className = "col-md-4 col-sm-6 mb-4";
+
     col.innerHTML = `
       <div class="card h-100 shadow-sm">
         <img src="${project.image}" class="card-img-top" alt="${project.title}">
@@ -85,6 +93,7 @@ l
         </div>
       </div>
     `;
+
     container.appendChild(col);
   });
 });
